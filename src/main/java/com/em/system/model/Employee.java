@@ -21,7 +21,7 @@ public class Employee {
 	private String lastName;
 	
 	@Column(name="email_id")
-	private String emailId;
+	private String email;
 
 	public Employee() {
 
@@ -31,7 +31,7 @@ public class Employee {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.emailId = email;
+		this.email = email;
 	}
 
 	public long getId() {
@@ -59,11 +59,11 @@ public class Employee {
 	}
 
 	public String getEmail() {
-		return emailId;
+		return email;
 	}
 
 	public void setEmail(String email) {
-		this.emailId = email;
+		this.email = email;
 	}
 
 }
