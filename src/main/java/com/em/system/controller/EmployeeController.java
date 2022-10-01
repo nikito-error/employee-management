@@ -52,7 +52,7 @@ public class EmployeeController {
 		employee.setFirstName(employeeDetails.getFirstName());
 		employee.setLastName(employeeDetails.getLastName());
 		employee.setEmail(employeeDetails.getEmail());
-		Employee updateEmployee = employeeRepository.save(employee);
-		return ResponseEntity.ok(updateEmployee);
+		Employee updatedEmployee = employeeRepository.save(employee);
+		return ResponseEntity.ok(updatedEmployee);
 	}
 }
